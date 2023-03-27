@@ -4,20 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-   android:background="#17191f"
+    android:background="#17191f"
     tools:context=".Homescreen">
 
-    <TextView
-        android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-       android:textSize="30dp"
-        android:textColor="#f3f3f2"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="10dp"
-        tools:layout_editor_absoluteX="180dp"
-        tools:layout_editor_absoluteY="358dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -34,135 +23,150 @@
         android:layout_height="1dp"
         android:background="#f3f3f2" />
 
-    <EditText
-        android:id="@+id/date"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:background="@drawable/inputs"
-        android:clickable="false"
-        android:cursorVisible="false"
-
-        android:focusable="false"
-        android:focusableInTouchMode="false"
-        android:gravity="center_horizontal"
-        android:hint="Enter date"
-        android:textColor="#f3151c"
-        android:textColorHint="#f3151c"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/fromTime"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="56dp"
-        android:layout_marginBottom="84dp"
-        android:background="@drawable/inputs"
-        android:clickable="false"
-        android:cursorVisible="false"
-        android:focusable="false"
-        android:focusableInTouchMode="false"
-        android:gravity="center_horizontal"
-        android:hint="Initial Time"
-        android:textColor="#f3151c"
-        android:textColorHint="#f3151c"
-        app:layout_constraintBottom_toTopOf="@+id/toTime"
-        app:layout_constraintEnd_toEndOf="parent"
-
-        app:layout_constraintHorizontal_bias="0.295"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Willing to wait"
+        android:text="Enter date of travel : "
         android:textColor="#f3f3f2"
-        android:textSize="30dp"
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.163" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="142dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/inputs"
+        android:clickable="false"
+
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:hint="select date"
+        android:textColor="#f3151c"
+        android:textColorHint="#f3151c"
+        android:textSize="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.535"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.308" />
+        app:layout_constraintVertical_bias="0.818" />
+
+    <TextView
+        android:id="@+id/check"
+        android:layout_width="40dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="4dp"
+        android:text="to "
+        android:textColor="#f3f3f2"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.086" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_marginStart="28dp"
-        android:text="From"
+        android:layout_marginStart="40dp"
+        android:text="from "
         android:textColor="#f3f3f2"
-        android:textSize="30dp"
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.437" />
-
-
-
-
-    <TextView
-        android:id="@+id/check"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
-        android:layout_marginEnd="72dp"
-        android:text="To"
-        android:textColor="#f3f3f2"
-        android:textSize="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/toTime"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.467" />
 
     <EditText
-        android:id="@+id/toTime"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:id="@+id/fromTime"
+        android:layout_width="142dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
         android:background="@drawable/inputs"
         android:clickable="false"
         android:cursorVisible="false"
         android:focusable="false"
         android:focusableInTouchMode="false"
-        android:gravity="center_horizontal"
-        android:hint="@string/end_time"
+        android:gravity="center"
+        android:hint="select time"
 
         android:textColor="#f3151c"
         android:textColorHint="#f3151c"
-
-        app:layout_constraintBottom_toTopOf="@+id/submit"
+        android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.517"
+
+        app:layout_constraintHorizontal_bias="0.692"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/fromTime"
+        android:layout_width="142dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="112dp"
+        android:background="@drawable/inputs"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:hint="select time"
+
+        android:textColor="#f3151c"
+        android:textColorHint="#f3151c"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.692"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Willing to wait : "
+        android:textColor="#f3f3f2"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.177"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.819" />
+        app:layout_constraintVertical_bias="0.354" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/logout"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
+        android:layout_width="98dp"
+        android:layout_height="43dp"
 
         android:background="@drawable/logout"
         android:text="Logout"
         android:textColor="#f3f3f2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintHorizontal_bias="0.948"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.061" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/submit"
@@ -170,11 +174,37 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="Submit"
+        android:background="@drawable/logout"
+        android:textColor="#f3f3f2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.796" />
+        app:layout_constraintVertical_bias="0.948" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="35dp"
+        android:layout_height="29dp"
+        app:srcCompat="@drawable/baseline_arrow_right_alt_24"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="397dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="35dp"
+        android:layout_height="29dp"
+        app:srcCompat="@drawable/baseline_arrow_right_alt_24"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="331dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="352dp"
+        android:layout_height="110dp"
+        app:srcCompat="@drawable/img"
+        tools:layout_editor_absoluteX="-94dp"
+        tools:layout_editor_absoluteY="4dp" />
     />
 </androidx.constraintlayout.widget.ConstraintLayout>
