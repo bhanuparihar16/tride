@@ -93,7 +93,7 @@ public class Homescreen extends AppCompatActivity {
 
 
         ////////////////
-        name=findViewById(R.id.name);
+        //name=findViewById(R.id.name);
         submit=findViewById(R.id.submit);
         ////////////
         GoogleSignInAccount signInAccount= GoogleSignIn.getLastSignedInAccount(this);
@@ -267,8 +267,7 @@ public class Homescreen extends AppCompatActivity {
                     // hiding our progress bar
                     // and setting data to edit text as empty
 
-                    Intent intent=new Intent(getApplicationContext(),Match.class);
-                    startActivity(intent);
+
 
                     // on below line we are displaying a success toast message.
                     Toast.makeText(Homescreen.this, "Data added to API", Toast.LENGTH_SHORT).show();
